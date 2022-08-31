@@ -1,13 +1,13 @@
-package com.bank.msbootcointransferyanki;
+package com.bank.msbootcointransferyankibatch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsBootcoinTransferYankiApplication {
+public class MsBootcoinTransferYankibatchApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsBootcoinTransferYankiApplication.class, args);
+		SpringApplication.run(MsBootcoinTransferYankibatchApplication.class, args);
 	}
 
 }

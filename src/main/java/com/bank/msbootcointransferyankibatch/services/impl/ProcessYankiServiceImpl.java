@@ -36,8 +36,8 @@ public class ProcessYankiServiceImpl implements ProcessYankiService {
             Optional<Customer> customer = customerService.findByPhoneNumber(dataEvent.getData().getRecipientAccount());
             if(customer.isPresent()){
                 dataEvent.setDateEvent(LocalDateTime.now());
-                dataEvent.setProcess(Constant.PROCESS_BOOTCOIN_TRANSFER_YANKI_TRANSACTION);
-                kafkaProducer.sendMessageTransactionYanki(dataEvent);
+                dataEvent.setProcess(Constant.PROCESS_BOOTCOIN_TRANSFER_YANKI_PAYMENT);
+                kafkaProducer.sendMessagePaymentYanki(dataEvent);
             }else{
                 dataEvent.setDateEvent(LocalDateTime.now());
                 dataEvent.setProcess(Constant.PROCESS_BOOTCOIN_TRANSFER_YANKI_STATUS);

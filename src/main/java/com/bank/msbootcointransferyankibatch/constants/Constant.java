@@ -20,4 +20,6 @@ public class Constant {
 
     public static final String PROCESS_BOOTCOIN_TRANSFER_YANKI_TRANSACTION = "11";
 
+    public static final String PROCESS_BOOTCOIN_TRANSFER_YANKI_PAYMENT = "17";
+
 }
